@@ -1,0 +1,23 @@
+p {
+    color: blue;
+}
+
+#main-title {
+    color: red;
+}
+
+.bold-item {
+    font-weight: bold;
+}
+
+h2 {
+    color: green;
+}
+
+.conflict {
+    color: orange;
+}
+
+#priority-test {
+    color: purple;
+}
