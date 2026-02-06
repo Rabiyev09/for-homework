@@ -2,50 +2,109 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Pseudo-classes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS and Colors</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f2f2f2; 
+        }
+
+        .box-px {
+            width: 300px;
+            height: 100px;
+            background-color: #cce5ff;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .title-rem {
+            font-size: 2rem; 
+            color: #333;
+        }
+
+        .container-em {
+            font-size: 50px; 
+            border: 2px solid #462424;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .container-em p {
+            font-size: 1.5em; 
+        }
+
+        .parent {
+            width: 400px;
+            background-color: #654848;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+
+        .child {
+            width: 50%; 
+            background-color: #aaa;
+            padding: 10px;
+        }
+
+        .color-hex {
+            background-color: #ffcccb;
+            color: #660000;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .color-rgb {
+            background-color: rgb(173, 216, 230);
+            color: rgb(0, 0, 139);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .color-rgba {
+            background-color: rgba(0, 128, 0, 0.5);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Pseudo-classes: hover & focus</h1>
+    <h1 class="title-rem">CSS and Colors</h1>
 
-    <form>
-        <input type="text" placeholder="Enter your name">
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <hr>
-
-    <h2>first-child & last-child</h2>
-
-    <ul>
-        <li>First item</li>
-        <li>Middle item</li>
-        <li>Last item</li>
-    </ul>
-
-    <hr>
-
-    <h2>Pseudo-classes on different elements</h2>
-
-    <div class="content-block">
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <p>Paragraph 3</p>
-
-        <a href="#">Sample link</a>
+    <div class="box-px">
+        <p>Этот блок использует <strong>px</strong> для точных размеров.</p>
     </div>
 
-    <hr>
+    <div class="container-em">
+        <p>Этот текст использует <strong>em</strong> относительно контейнера.</p>
+    </div>
 
-    <h2>Combination of pseudo-classes</h2>
+    <div class="parent">
+        Родительский контейнер (400px)
+        <div class="child">
+            Дочерний контейнер (100%, 50% от родителя)
+        </div>
+    </div>
 
-    <div class="combo">
-        <p>First paragraph</p>
-        <p>Middle paragraph</p>
-        <input type="text" placeholder="Focus me (last child)">
+    <div class="color-hex">
+        цвет текста и фона с помощью шестнадцатеричной системы<strong>HEX</strong>
+    </div>
+
+    <div class="color-rgb">
+        Модель для задания цветов фона и текста <strong>RGB</strong>
+    </div>
+
+    <div class="color-rgba">
+        Модель для добавления прозрачности к цветам <strong>RGBA</strong> 
     </div>
 
 </body>
