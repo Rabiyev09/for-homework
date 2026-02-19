@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img.block {
+            display: block; /* Картинка становится блочной */
+            margin-bottom: 10px;
+        }
+
+        p.inline {
+            display: inline; /* Абзац становится линейным */
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+        }
+
+        /* Работа с вложенными элементами */
+        .container {
+            border: 2px solid #3498db;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .container p,
+        .container img {
+            display: block; /* Вложенные элементы становятся блочными */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пример заголовка </h1>
+    <hr>
+    <p>Пример абзаца </p>
+    <div>Пример контейнера </div>
+    <img src="picture1.png" alt="css" width="150" height="150"/>
+
+    <!-- Задание 2 -->
+    <h2>Преобразование элементов</h2>
+    <p class="inline">Этот абзац стал линейным</p>
+    <img class="block" src="picture2.jpg" alt="html and css" width="250" height="150"/>
+
+    <!-- Задание 3 -->
+    <h2>Вложенные элементы в контейнере</h2>
+    <div class="container">
+        <p><strong>Абзац внутри контейнера</strong></p>
+    </div>
+    <div class="container">
+        <img src="picture3.png" alt="html and css" width="180" height="150"/>
+    </div>
+
+</body>
+</html>
